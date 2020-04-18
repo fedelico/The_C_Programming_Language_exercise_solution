@@ -4,7 +4,7 @@
 !*.[ch]
 
 #unignore all directories
-! */
+!*/
 
 #unignore README file
 !README
