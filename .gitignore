@@ -1,0 +1,15 @@
+#ignore all
+*
+#unignore .c .h files
+!*.[ch]
+
+#unignore all directories
+! */
+
+#unignore README file
+!README
+
+#ignore all text book example programs
+Ex/
+
+
