@@ -7,7 +7,7 @@ int main(void)
     upper = 300;
     lower = 0;
     step = 20;
-    celsius = 0;
+    celsius = lower;
     printf("celsius     fahrenheit\n");
     while (celsius <= upper){
         fahr = (5 * celsius / 9) + 32;

@@ -7,9 +7,9 @@ int main(void)
     upper = 300;
     lower = 0;
     step = 20;
-    fahr = 0;
+    fahr = lower;
     printf("Fahrenheit    Celsius\n"); // Header for the temperature table
-    while(fahr <= upper){
+    while (fahr <= upper){
         celsius = (5.0/9.0) * fahr - 32.0;
         printf("%6.0f%14.2f\n", fahr, celsius);
         fahr += step;
