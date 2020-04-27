@@ -25,7 +25,9 @@ int main(void)
     while ((len = get_line(line, MAXLEN)) > 0){
         clean_buffer(out_line, MAXLEN);
         for (i = j = 0; i < len+1; ++i){
-            if (state == OUT && line[i] == '\"' && (i == 0 || (i > 0 && line[i-1] != '\\'))){
+            if (state == OUT && 
+                line[i] == '\"' && 
+                (i == 0 || (i > 0 && line[i-1] != '\\') || (i-1 > 0 && line[i-2] == '\\'))){
                 if (detection == ON)
                     detection = OFF;
                 else
